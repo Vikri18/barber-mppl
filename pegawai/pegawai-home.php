@@ -74,98 +74,94 @@ if (getRole($_SESSION["id"]) != "pegawai") {
             $res = $db->query($sql);
             if ($res) {
         ?>
-                <form action="pegawai-home.php" method="post">
-                    <table border=2 class="table table-striped" cellspacing="7">
-                        <tr bgcolor=silver>
-                            <th>No Pesanan</th>
-                            <th>Nama Customer</th>
-                            <th>Email Customer</th>
-                            <th>Layanan</th>
-                            <th>Tanggal</th>
-                            <th>Catatan Customer</th>
-                            <th>Keterangan</th>
-                            <th>Aksi</th>
-                        </tr>
-                        <?php
-                        $data = $res->fetch_all(MYSQLI_ASSOC);
-                        foreach ($data as $barisdata) {
-                        ?>
-                            <tr>
-                                <td><?php echo $barisdata["id"]; ?></td>
-                                <td><?php echo $barisdata["nama"]; ?></td>
-                                <td><?php echo $barisdata["email"]; ?></td>
-                                <td><?php echo $barisdata["nama_layanan"]; ?></td>
-                                <td><?php echo $barisdata["tanggal_pemesanan"]; ?></td>
-                                <td><?php echo $barisdata["catatan"]; ?></td>
-                                <td><?php echo $barisdata["keterangan_pesanan"]; ?></td>
-                                <td><a href="pegawai-home.php?hal=done&id=<?php echo $barisdata["id"]; ?>" ">
+                <table border=2 class="table table-striped" cellspacing="7">
+                    <tr bgcolor=silver>
+                        <th>No Pesanan</th>
+                        <th>Nama Customer</th>
+                        <th>Email Customer</th>
+                        <th>Layanan</th>
+                        <th>Tanggal</th>
+                        <th>Catatan Customer</th>
+                        <th>Keterangan</th>
+                        <th>Aksi</th>
+                    </tr>
+                    <?php
+                    $data = $res->fetch_all(MYSQLI_ASSOC);
+                    foreach ($data as $barisdata) {
+                    ?>
+                        <tr>
+                            <td><?php echo $barisdata["id"]; ?></td>
+                            <td><?php echo $barisdata["nama"]; ?></td>
+                            <td><?php echo $barisdata["email"]; ?></td>
+                            <td><?php echo $barisdata["nama_layanan"]; ?></td>
+                            <td><?php echo $barisdata["tanggal_pemesanan"]; ?></td>
+                            <td><?php echo $barisdata["catatan"]; ?></td>
+                            <td><?php echo $barisdata["keterangan_pesanan"]; ?></td>
+                            <td><a href="pegawai-home.php?hal=done&id=<?php echo $barisdata["id"]; ?>" ">
                                         <button class=" btn btn-success">Tandai Sudah Selesaii</button></a></td>
-                            </tr>
-
-                </form>
-    <?php
-                        }
-                        $res->free();
-                    } else
-                        echo "Gagal Eksekusi SQL" . (DEVELOPMENT ? " : " . $db->error : "") . "<br>";
-                } else
-                    echo "Gagal Koneksi" . (DEVELOPMENT ? " : " . $db->error : "") . "<br>";
-    ?>
+                        </tr>
 
 
-
-
-    <?php
-    if (isset($_GET['hal'])) {
-        if ($_GET['hal'] == "done") {
-            $db = dbConnect();
-            $id = $db->escape_string($_GET["id"]);
-            if ($db->connect_errno == 0) {
-                //Penyusunan Query
-                $sql = "UPDATE pemesanan SET 
-                          keterangan_pesanan=? WHERE id=?";
-                $ket = "SELESAI";
-                //Eksekusi Query
-                if ($stmt = $db->prepare($sql)) {
-                    $stmt->bind_param("si", $ket, $id);
-                    if ($stmt->execute()) {
-                        if ($db->affected_rows > 0) { //jika ada update data produk
-    ?>
-                            <?php
-                            echo "Query Error : " . (DEVELOPMENT ?:  "Data berhasil diupdate.") . "<br>";
-                            header("refresh:1");
-                            ?>
-                            </br>
-                        <?php
-                        } else { //Jika sql berhasil di eksekusi tapi data tidak berubah
-                        ?>
-                            <h1>berhasil tanpa ada perubahan</h1>
-
-                            <?php
-                            echo "Query Error : " . (DEVELOPMENT ?:  "Data berhasil di update tetapi tanpa ada perubahan data.") . "<br>";
-                            header("refresh:1");
-                            ?>
-                            </br>
-                        <?php
-                        }
-                    } else { //gagal di querynya
-                        ?>
-                        <h1>gagal</h1>
-                        <?php
-                        echo "Query Error : " . (DEVELOPMENT ?:  "Data gagal diupdate.") . "<br>";
-                        header("refresh:1");
-                        ?>
-                        <br>
-
-    <?php
+            <?php
                     }
+                    $res->free();
                 } else
-                    echo "Query Error : " . (DEVELOPMENT ? " : " . $db->error : "") . "<br>";
+                    echo "Gagal Eksekusi SQL" . (DEVELOPMENT ? " : " . $db->error : "") . "<br>";
             } else
-                echo "Gagal koneksi" . (DEVELOPMENT ? " : " . $db->connect_error : "") . "<br>";
-        } //end if get == hal
-    }
-    ?>
+                echo "Gagal Koneksi" . (DEVELOPMENT ? " : " . $db->error : "") . "<br>";
+            ?>
+
+
+
+
+            <?php
+            if (isset($_GET['hal'])) {
+                if ($_GET['hal'] == "done") {
+                    $db = dbConnect();
+                    $id = $db->escape_string($_GET["id"]);
+                    if ($db->connect_errno == 0) {
+                        //Penyusunan Query
+                        $sql = "UPDATE pemesanan SET 
+                          keterangan_pesanan=? WHERE id=?";
+                        $ket = "SELESAI";
+                        //Eksekusi Query
+                        if ($stmt = $db->prepare($sql)) {
+                            $stmt->bind_param("si", $ket, $id);
+                            if ($stmt->execute()) {
+                                if ($db->affected_rows > 0) { //jika ada update data produk
+            ?>
+                                    <?php
+                                    echo "Query Error : " . (DEVELOPMENT ?:  "Data berhasil diupdate.") . "<br>";
+                                    ?>
+                                    </br>
+                                <?php
+                                } else { //Jika sql berhasil di eksekusi tapi data tidak berubah
+                                ?>
+                                    <h1>berhasil tanpa ada perubahan</h1>
+
+                                    <?php
+                                    echo "Query Error : " . (DEVELOPMENT ?:  "Data berhasil di update tetapi tanpa ada perubahan data.") . "<br>";
+                                    ?>
+                                    </br>
+                                <?php
+                                }
+                            } else { //gagal di querynya
+                                ?>
+                                <h1>gagal</h1>
+                                <?php
+                                echo "Query Error : " . (DEVELOPMENT ?:  "Data gagal diupdate.") . "<br>";
+                                ?>
+                                <br>
+
+            <?php
+                            }
+                        } else
+                            echo "Query Error : " . (DEVELOPMENT ? " : " . $db->error : "") . "<br>";
+                    } else
+                        echo "Gagal koneksi" . (DEVELOPMENT ? " : " . $db->connect_error : "") . "<br>";
+                } //end if get == hal
+            }
+            ?>
 
 
 
