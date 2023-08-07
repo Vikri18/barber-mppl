@@ -98,7 +98,7 @@ if (getRole($_SESSION["id"]) != "pegawai") {
                             <td><?php echo $barisdata["catatan"]; ?></td>
                             <td><?php echo $barisdata["keterangan_pesanan"]; ?></td>
                             <td><a href="pegawai-home.php?hal=done&id=<?php echo $barisdata["id"]; ?>" ">
-                                        <button class=" btn btn-success">Tandai Sudah Selesaii</button></a></td>
+                                        <button class=" btn btn-success">Tandai Sudah Selesai</button></a></td>
                         </tr>
 
 
