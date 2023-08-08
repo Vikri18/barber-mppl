@@ -10,8 +10,8 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Barber - Barbers & Hair Cutting</title>
-  <meta name="title" content="Barber - Barbers & Hair Cutting">
+  <title>Barber</title>
+  <meta name="title" content="Barber">
   <meta name="description" content="">
 
   <!-- 
@@ -85,9 +85,6 @@
               <a href="#appointment" class="navbar-link" data-nav-link>Appointment</a>
             </li>
 
-            <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Contact</a>
-            </li>
 
           </ul>
         </nav>
@@ -121,15 +118,13 @@
       <section class="section hero has-before has-bg-image" id="home" aria-label="home" style="background-image: url('./assets/images/hero-banner.jpg')">
         <div class="container">
 
-          <h1 class="h1 hero-title">Barbers & Hair Cutting</h1>
+          <h1 class="h1 hero-title">Barbershop</h1>
 
           <p class="hero-text">
-            Sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            suspendisse
-            ultrices gravida
+            Hair Cutting, Hair color, Spa, Massage
           </p>
 
-          <a href="#" class="btn has-before">
+          <a href="#services" class="btn has-before">
             <span class="span">Explore Our Services</span>
 
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -152,7 +147,6 @@
           <h2 class="h2 section-title text-center">Service We Provide</h2>
 
           <p class="section-text text-center">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
           </p>
 
           <ul class="grid-list">
@@ -169,10 +163,10 @@
                 </h3>
 
                 <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Potong Rambut Dengan Style Pilihan Anda
                 </p>
 
-                <a href="#" class="card-btn" aria-label="more">
+                <a href="#pricing" class="card-btn" aria-label="more">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
@@ -191,10 +185,10 @@
                 </h3>
 
                 <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Cuci Rambut Dengan Sampo yang Berkualitas.
                 </p>
 
-                <a href="#" class="card-btn" aria-label="more">
+                <a href="#pricing" class="card-btn" aria-label="more">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
@@ -213,10 +207,10 @@
                 </h3>
 
                 <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Pijat Professional yang Dapat Merilekskan Tubuh Anda
                 </p>
 
-                <a href="#" class="card-btn" aria-label="more">
+                <a href="#pricing" class="card-btn" aria-label="more">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
@@ -231,21 +225,21 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Beauty & Spa</a>
+                  <a href="#" class="card-title">Spa</a>
                 </h3>
 
                 <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Kualitas Spa Internasional
                 </p>
 
-                <a href="#" class="card-btn" aria-label="more">
+                <a href="#pricing" class="card-btn" aria-label="more">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
               </div>
             </li>
 
-            <li>
+            <!-- <li>
               <div class="service-card">
 
                 <div class="card-icon">
@@ -253,11 +247,10 @@
                 </div>
 
                 <h3 class="h3">
-                  <a href="#" class="card-title">Stylist Shaving</a>
+                  <a href="#" class="card-title"></a>
                 </h3>
 
                 <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
 
                 <a href="#" class="card-btn" aria-label="more">
@@ -265,7 +258,7 @@
                 </a>
 
               </div>
-            </li>
+            </li> -->
 
             <li>
               <div class="service-card">
@@ -279,10 +272,10 @@
                 </h3>
 
                 <p class="card-text">
-                  Sit amet consectetur adipisci elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ganti Warna Rambut Sesuai Keinginan anda
                 </p>
 
-                <a href="#" class="card-btn" aria-label="more">
+                <a href="#pricing" class="card-btn" aria-label="more">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </a>
 
@@ -305,15 +298,15 @@
       <section class="section pricing has-bg-image has-before" id="pricing" aria-label="pricing" style="background-image: url('./assets/images/pricing-bg.jpg')">
         <div class="container">
 
-          <h2 class="h2 section-title text-center">Awesome Pricing Plan</h2>
+          <h2 class="h2 section-title text-center">Awesome Pricing</h2>
 
           <p class="section-text text-center">
-            Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua suspendisse
+            Service Kelas Internasional, Harga Nasional
           </p>
 
           <div class="pricing-tab-container">
 
-            <ul class="tab-filter">
+            <!-- <ul class="tab-filter">
 
               <li>
                 <button class="filter-btn active" data-filter-btn="all">
@@ -375,7 +368,7 @@
                 </button>
               </li>
 
-            </ul>
+            </ul> -->
 
             <ul class="grid-list">
 
@@ -387,17 +380,17 @@
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Hair Cutting & Fitting</h3>
+                    <h3 class="h3 card-title">Hair Cutting</h3>
 
                     <p class="card-text">Clean & simple 30-40 minutes</p>
                   </div>
 
-                  <data class="card-price" value="89">$89</data>
+                  <data class="card-price" value="">Rp. 50.000</data>
 
                 </div>
               </li>
 
-              <li data-filter="shaving">
+              <!-- <li data-filter="shaving">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
@@ -413,7 +406,7 @@
                   <data class="card-price" value="45">$45</data>
 
                 </div>
-              </li>
+              </li> -->
 
               <li data-filter="face-washing">
                 <div class="pricing-card">
@@ -428,7 +421,7 @@
                     <p class="card-text">Clean & simple 30-40 minutes</p>
                   </div>
 
-                  <data class="card-price" value="35">$35</data>
+                  <data class="card-price" value="">Rp. 40.000</data>
 
                 </div>
               </li>
@@ -446,7 +439,7 @@
                     <p class="card-text">Clean & simple 30-40 minutes</p>
                   </div>
 
-                  <data class="card-price" value="56">$56</data>
+                  <data class="card-price" value="">Rp. 45.000</data>
 
                 </div>
               </li>
@@ -459,17 +452,17 @@
                   </figure>
 
                   <div class="wrapper">
-                    <h3 class="h3 card-title">Beauty & Spa</h3>
+                    <h3 class="h3 card-title">Spa</h3>
 
                     <p class="card-text">Clean & simple 30-40 minutes</p>
                   </div>
 
-                  <data class="card-price" value="27">$27</data>
+                  <data class="card-price" value="">Rp. 35.000</data>
 
                 </div>
               </li>
 
-              <li data-filter="face-washing">
+              <!-- <li data-filter="face-washing">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
@@ -485,9 +478,9 @@
                   <data class="card-price" value="63">$63</data>
 
                 </div>
-              </li>
+              </li> -->
 
-              <li data-filter="body-treatments">
+              <!-- <li data-filter="body-treatments">
                 <div class="pricing-card">
 
                   <figure class="card-banner img-holder" style="--width: 90; --height: 90;">
@@ -521,7 +514,7 @@
                   <data class="card-price" value="74">$74</data>
 
                 </div>
-              </li>
+              </li> -->
 
             </ul>
 
@@ -547,16 +540,14 @@
               <h2 class="h2 section-title">Latest Photo Gallery</h2>
 
               <p class="section-text">
-                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
-                suspendisse
               </p>
             </div>
 
-            <a href="#" class="btn has-before">
+            <!-- <a href="#" class="btn has-before">
               <span class="span">Explore More Gallery</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
+            </a> -->
 
           </div>
 
@@ -575,9 +566,9 @@
 
                   <p class="card-text">Barbers & Salon Services</p>
 
-                  <a href="#" class="card-btn" aria-label="Read more">
+                  <!-- <a href="#" class="card-btn" aria-label="Read more">
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
+                  </a> -->
 
                 </div>
 
@@ -597,9 +588,9 @@
 
                   <p class="card-text">Barbers & Salon Services</p>
 
-                  <a href="#" class="card-btn" aria-label="Read more">
+                  <!-- <a href="#" class="card-btn" aria-label="Read more">
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
+                  </a> -->
 
                 </div>
 
@@ -619,9 +610,9 @@
 
                   <p class="card-text">Barbers & Salon Services</p>
 
-                  <a href="#" class="card-btn" aria-label="Read more">
+                  <!-- <a href="#" class="card-btn" aria-label="Read more">
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
+                  </a> -->
 
                 </div>
 
@@ -641,9 +632,9 @@
 
                   <p class="card-text">Barbers & Salon Services</p>
 
-                  <a href="#" class="card-btn" aria-label="Read more">
+                  <!-- <a href="#" class="card-btn" aria-label="Read more">
                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
+                  </a> -->
 
                 </div>
 
@@ -677,8 +668,6 @@
               <h2 class="h2 section-title">Make Appointment</h2>
 
               <p class="section-text">
-                Sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua
-                suspendisse
               </p>
 
               <form method="post" action="pemesanan/pemesanan.php" class="appoin-form">
@@ -743,13 +732,13 @@
       <div class="footer-top">
 
         <div class="footer-brand">
-
+          <!-- 
           <a href="#" class="logo">
             Barber
             <span class="span">Hair Salon</span>
-          </a>
+          </a> -->
 
-          <form action="" class="input-wrapper">
+          <!-- <form action="" class="input-wrapper">
 
             <input type="email" name="email_address" placeholder="Enter Your Email" required class="email-field">
 
@@ -759,7 +748,7 @@
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </button>
 
-          </form>
+          </form> -->
 
         </div>
 
@@ -772,24 +761,10 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link has-before">Our Services</a>
+              <a href="#service" class="footer-link has-before">Our Services</a>
             </li>
 
-            <li>
-              <a href="#" class="footer-link has-before">Meet Our Team</a>
-            </li>
 
-            <li>
-              <a href="#" class="footer-link has-before">Our Portfolio</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">Need A Career?</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link has-before">News & Blog</a>
-            </li>
 
           </ul>
 
@@ -803,27 +778,25 @@
               <a href="#" class="footer-link has-before">Hair Cutting</a>
             </li>
 
-            <li>
-              <a href="#" class="footer-link has-before">Shaving & Design</a>
-            </li>
 
             <li>
               <a href="#" class="footer-link has-before">Hair Colors</a>
             </li>
 
-            <li>
-              <a href="#" class="footer-link has-before">Beauty & Spa</a>
-            </li>
 
             <li>
               <a href="#" class="footer-link has-before">Body Massages</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link has-before">Spa</a>
             </li>
 
           </ul>
 
           <ul class="footer-list">
 
-            <li>
+            <!-- <li>
               <p class="footer-list-title">Recent News</p>
             </li>
 
@@ -869,7 +842,7 @@
                 </div>
 
               </div>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -883,7 +856,8 @@
               <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
 
               <address class="contact-link">
-                7528 Roberts Ave. Palm Bay, FL 32907
+                Jl Dipatiukur 999,
+                Bandung
               </address>
             </li>
 
@@ -893,11 +867,11 @@
               <a href="tel:+0123456789" class="contact-link">+62 888 777 666 55</a>
             </li>
 
-            <li class="footer-list-item">
+            <!-- <li class="footer-list-item">
               <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
               <span class="contact-link">Sun - Friday, 08 am - 09 pm</span>
-            </li>
+            </li> -->
 
             <li class="footer-list-item">
               <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
